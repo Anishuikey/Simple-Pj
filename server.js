@@ -5,7 +5,7 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.static('public')); // For serving static files (CSS)
+app.use(express.static('public')); // For serving static files (CSS)
 
 // Routes
 app.get('/signup', (req, res) => {

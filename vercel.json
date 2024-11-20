@@ -9,7 +9,7 @@
    "routes": [
   { "src": "/signup", "dest": "/server.js" },
   { "src": "/login", "dest": "/server.js" },
-  { "src": "/(.*)", "dest": "/" }
+  { "src": "/(.*)", "dest": "/signup" }
 ]
 
   }

@@ -1,16 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.js",
-        "use": "@vercel/node"
-      }
-    ],
-   "routes": [
-  { "src": "/signup", "dest": "/server.js" },
-  { "src": "/login", "dest": "/server.js" },
-  { "src": "/(.*)", "dest": "/signup" }
-]
-
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "status": 308,
+      "headers": { "Location": "/signup" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}

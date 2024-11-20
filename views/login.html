@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- <body class="bg-[#16a34a] flex items-center justify-center h-screen "> -->
+    <body class="bg-gradient-to-r from-[#7f96ff] to-[#320e3b] flex items-center justify-center h-screen">
+
+    <div class="container max-w-sm w-full bg-white p-6 rounded-lg shadow-md">
+      <!-- Title -->
+      <!-- <h2 class="text-[#16a34a] text-2xl font-semibold text-center text-gray-800 mb-6">Login</h2> -->
+
+      <!-- <h2 class="text-pink-800 text-2xl font-semibold text-center text-gray-800 mb-6">Login</h2> -->
+
+      
+      <!-- Form --><h2 class="text-[#16a34a] text-2xl font-semibold text-center mb-6">Login</h2>
+
+      <form class="space-y-4" action="/login" method="POST">
+        <!-- Email Field -->
+        <div>
+          <label for="login-email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            id="login-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+
+        <!-- Password Field -->
+        <div>
+          <label for="login-password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="Enter your password"
+            required
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button
+            type="submit"
+            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+
+      <!-- Footer Text -->
+      <p class="mt-4 text-sm text-center text-gray-600">
+        Don't have an account? 
+        <a href="/signup" class="text-blue-600 hover:underline">Sign Up</a>
+      </p>
+    </div>
+  </body>
+</html>
